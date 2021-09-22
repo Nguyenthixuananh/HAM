@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Tạo hàm nhận vào hai tham số. -->
+<!--Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai, hiển thị hộp thoại thông báo cho người dùng. -->
+<!--Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai, trả về tổng của hai tham số.-->
+
+<input type="text" id="a" placeholder="Số thứ nhất">
+<input type="text" id="b" placeholder="Số thứ hai">
+<input type="button" onclick="kiemTra()" value="Check">
+<script>
+
+
+    function kiemTra() {
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        if (a > b) {
+            alert("Số thứ nhất lớn hơn số thứ hai")
+            } else {
+                let sum = a + b
+                alert(sum)
+            }
+        }
+</script>
+</body>
+</html>
