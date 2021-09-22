@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let name = prompt("Nhập tên ngôi sao: ")
+
+    function star() {
+        for (let i = 0; i < arr1.length; i++) {
+            if (name === arr1[i]) {
+                return arr2[i]
+            } else {
+                return "Không có tên vừa nhập"
+            }
+        }
+    }
+
+    let result = star()
+    alert(result)
+</script>
+
+</body>
+</html>

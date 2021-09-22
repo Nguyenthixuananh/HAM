@@ -7,29 +7,22 @@
 <body>
 <script>
     function isPrime(number) {
-
-            let flag = true;
-
-            if (number < 2) {
-                flag = false;
-            } else if (number === 2) {
-                flag = true;
-            } else if (number % 2 === 0) {
-                flag = false;
-            } else {
-                for (let i = 3; i < Math.sqrt(n); i += 2) {
-                    if (number % i === 0) {
-                        flag = false;
-                        break;
-                    }
-                }
-            }
-            if (flag === true) {
-                number + " là số nguyên tố <br/>";
-            } else {
-                number + " không phải là số nguyên tố <br/>";
-            }
+        if (number < 2) {
+            return false;
         }
+        for (let i = 2; i < number; i++) {
+            if (number % i === 0)
+                return false;
+        }
+        return true
+
+    }
+
+    for (let j = 0; j < 10000; j++) {
+        if (isPrime(j))
+            document.write(j + "<br>")
+
+    }
 
 
 </script>
