@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được-->
+<script>
+    function tinhDienTich(r) {
+        return r*r*3.14
+    }
+    function tinhChuVi(r) {
+        return r*2*3.14
+    }
+    let num = +prompt("Nhập bán kính: ")
+    let s = tinhDienTich(num)
+    let p = tinhChuVi(num)
+    alert("Hình trong có diện tích là: "+ s + " và chu vi là: " + p)
+</script>
+</body>
+</html>
