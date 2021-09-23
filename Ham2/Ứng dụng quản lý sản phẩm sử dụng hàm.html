@@ -46,17 +46,17 @@
         productLish.push(newP)
         showProduct();
     }
-
-    function deleteProduct(index) {
-        productLish.splice(index, 1)
-        showProduct();
-    }
-
     function editProduct(index) {
         let newValue = prompt("Add new product", productLish[index])
         productLish[index] = newValue
         showProduct();
     }
+    function deleteProduct(index) {
+        productLish.splice(index, 1)
+        showProduct();
+    }
+
+
 </script>
 </body>
 </html>
